@@ -1,0 +1,113 @@
+/*
+Sintaxis de CSS
+
+Reglas o estilos
+selector {
+    propiedad: valor;
+}
+
+
+Selector -> clase, id, @algo, *, tag
+*/
+
+/*Selector de etiqueta o tag*/
+html{
+    font-family: "Montserrat", arial, sans-serif;
+}
+
+body{
+    background: tomato;
+}
+h2{
+    text-align: center;
+}
+
+/* Selector de Clase*/
+.contenedor{
+    border: 1px solid black;
+    background: rgba(255, 255, 255, 0.575);
+    /* opacity: 0.5; */
+
+}
+.color1{
+    color:rgba(172, 212, 188, 0.5);
+    background: white;
+}
+.img{
+    width:100%;
+}
+
+.color2{
+    background: white;
+}
+
+/*selector de ID*/
+#footer{
+    padding: 3%;
+    text-align: center;
+}
+
+/* Selector universal 
+*{
+    outline: 5px solid white;
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/* Selectores especiales /  reglas-at
+    https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule#conditional_group_rules
+ @media (condicion) {} -> adaptablidad del sitio (Responsive)
+ @import (ruta) -> linkear documentos .css
+ @keyframes nombre {} -> animacion CSS
+ @font-face {} -> definir una nueva fuente
+ @charset
+
+ 
+ */
+
+ /* Formulario */
+
+#formInscripcion{
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.527);
+    border-radius: 10px;
+    }
+    #formInscripcion div{
+        margin-bottom: 15px;
+    }
+    #formInscripcion input{
+        width: 90%;
+        padding: 10px;
+        border-radius: 5px;
+        border:3px solid rgba(67, 67, 100, 0.445);
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    #formInscripcion select{
+        width: 90%;
+        padding: 10px;
+        border:3px solid rgba(67, 67, 100, 0.445);
+        border-radius: 5px;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    .btn_envio{
+        background-color: rgb(9, 85, 32);
+        border-radius: 5px;
+        color: white;
+        }
+        .btn_envio:hover{
+            background-color: white;
+            color: rgb(9, 85, 32);
+            cursor: pointer;
+        }
+
+
+
+
+
+
+
