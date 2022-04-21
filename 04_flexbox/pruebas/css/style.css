@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: "Montserrat";
+}
+
+.container{
+    width:80%;
+    margin:0 auto;
+    }
+
+
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item{
+        width: 45%;
+        background: rgb(24, 95, 209);
+        padding: 2%;
+        /* float: left; */
+        margin: 3% 0;
+    }
+
+    /* dias */
+    .fechas{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        margin: 20px 0px; /*margin: top-bottom left-right*/
+        /* border: solid; */
+    }
+    .dias{
+        background-color: rgb(238, 62, 22);
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .martes{
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: rgb(208, 97, 6);
+
+    }
