@@ -26,7 +26,19 @@ html{
         padding: 2%;
         /* float: left; */
         margin: 3% 0;
-    }
+        }
+        .sub-item{
+            display: flex;
+            justify-content: space-around;
+        }
+        .sub-item div{
+            background-color: rgba(17, 40, 244, 0.783);
+            color:white
+        }
+        .item3{
+            flex-grow: 1;
+            background-color: rgb(13, 156, 70);
+        }
 
     /* dias */
     .fechas{
@@ -50,3 +62,37 @@ html{
         background-color: rgb(208, 97, 6);
 
     }
+
+    /* noticias */
+    h2{
+        margin: 3% 0;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 3% 0;
+        }
+        .noti{
+            padding: 5px;
+            background-color: blueviolet;
+            border-radius: 5px;
+            width: 30%;
+        }
+        /* flex-items */
+        .noti1{
+            order:0;
+            /* flex-grow: 1; */
+        }
+        .noti2{
+            order:0;
+            align-self: end;
+            /* flex-grow: 1; */
+        }
+        .noti3{
+            order:-1;
+            align-self: end;
+            /* flex-grow: 1; */
+            width: 100%;
+        }
