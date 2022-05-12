@@ -1,0 +1,196 @@
+html{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+*,body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header{
+   display: flex; 
+   justify-content: space-between;
+   background-color: azure;
+   margin-bottom: 30px;
+   padding: 2%;
+   box-shadow: 0 2px 5px 5px rgba(39, 39, 39, 0.5);
+    }
+
+    .logo{
+        flex-grow: 1.5;
+    }
+    .buscar{
+        flex-grow: 2;
+        }
+        .buscar input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            background: rgb(35, 106, 222);
+        }
+        .buscar input::placeholder{
+            color: white;
+        }
+    .rrss{
+        flex-grow: 1.5;
+        text-align: right;
+        }
+        .rrss a{
+            color: black;
+            font-size: 30px;
+            margin: 0 10px;
+            }
+            /* Ins */
+            .rrss a:nth-child(1):hover{
+                color:rgb(153, 12, 89)
+            }
+            /* Tictok */
+            .rrss a:nth-child(2):hover{
+                color:rgb(105, 201, 208)
+            }
+            .rrss a:nth-child(3):hover{
+                color:red;
+            }
+
+
+/* Footer */
+    .footer{
+        background-color: rgb(34, 34, 34);
+        color: white;
+        padding: 6%;
+        text-align: center;
+        margin-top: 5%;
+        }
+        .copy{
+            font-weight: 100;
+        }
+
+/* noticias */
+
+.news{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.news .art{
+    width: 30%;
+}
+
+.art .img img{
+    width: 100%;
+}
+.art .img{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* Media Queries */
+/* Extra grandes -> a partir de 1201 */
+/* Do Not Repeat Yourself DNYS */
+
+/* Grandes -> hasta 1200px */
+@media (min-width: 990px) and (max-width:1200px){
+    body{
+        background-color: aqua;
+    }
+    .news .art{
+        width: 32%;
+    }
+} 
+/* Medianos -> hasta 990px */
+@media (min-width:601px) and (max-width:990px){
+    body{
+            background-color: rgb(109, 17, 238);
+        }
+        .content{
+            width: 95%;
+            }
+            .news .art{
+                width: 48%;
+                margin: 2% 0;
+                }
+                .news .art h2{
+                margin: 2% 0;   
+                }
+                /* 1era noticia */
+                .news .art1{
+                    width:100%;
+                    }
+                    .news .art1 .img{
+                        height: 40vh;
+                        
+                    }
+}
+
+/* Pequeños -> hasta 600px */
+@media (max-width:600px) {
+    body{
+            background-color: rgb(212, 238, 17);
+        }
+        .content{
+            width: 95%;
+        }
+
+        .header{
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            align-content: baseline;
+            align-items: center;
+            position: sticky;
+            top:0;
+            }
+            .logo{
+                font-size: 14px;
+            }
+            .buscar{
+                /* display: none; */
+                order:1;
+                margin: 10px 0;
+                width: 95%;
+            }
+            .rrss a{
+                font-size: 20px;
+            }
+
+        .news{
+            flex-direction: column;
+            }
+            .news .art{
+                width: 100%;
+                margin-bottom: 6%;
+                padding-bottom: 6%;
+                border-bottom: solid 1px grey;
+            }
+            .news .art .img{
+                height: 20vh;
+                
+            }
+            .news .art:last-child(){         
+
+            }
+            
+
+}
+
+
+
+/* @media (orientation:landscape){
+    body{
+        background: none;
+    }
+} */
+

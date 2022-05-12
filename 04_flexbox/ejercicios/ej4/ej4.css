@@ -1,0 +1,39 @@
+html{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content,.header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5%;
+}
+
+.content{
+    background-color: salmon;
+    height: 74vh;
+}
+.content h3{
+    text-align: center;
+}
+
+/* Ejercicio 1 */
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center ;
+    }
+    .item img{
+        width: 100%;
+    }
+    .item{
+        width: 30%;
+        padding: 3%;
+    }
