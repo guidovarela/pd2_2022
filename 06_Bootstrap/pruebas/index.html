@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <!-- Containers -->
+    
+    <header class="container-fluid bg3">
+        <div class="container">
+            <h1>Hola Mundo, estamos usando Bootstrap</h1>
+        </div>
+    </header>
+
+    <div class="container bg1">
+        <h2>Esto es un container responsive</h2>
+    </div>
+
+    <div class="container-fluid bg2">
+        <h2>Esto es un container fluid (elastico / fluido)</h2>
+    </div>
+
+    <div class="container-lg bg3">
+        <h2>Esto es un container fluid, que se transforma en responsive a partir de 992px</h2>
+    </div>
+
+
+
+    <!-- Grillas -->
+
+    <h2 class="text-center text-uppercase">Grillas</h2>
+
+    <div class="container">
+        <section class="row">
+            <div class="col bg4 text-white">Columna 1</div>
+            <div class="col bg5 text-white">Columna 2</div>
+            <div class="col bg4 text-white">Columna 3</div>
+            <div class="col bg5 text-white">Columna 4</div>
+            <div class="col bg4 text-white">Columna 5</div>
+            <div class="col bg5 text-white">Columna 6</div>
+        </section>
+    </div>
+
+    <!-- grillas responsive -->
+    <h3>Filas</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 bg2">Columna 1</div>
+            <div class="col-6 bg3">Columna 1</div>
+        </div> 
+        <h3>Filas</h3>
+        <div class="row justify-content-between">
+            <div class="col-4 ">
+                <div class="contenidos bg2">
+                    Columna 2
+                </div> 
+            </div>
+            <div class="col-4 ">
+                <div class="contenidos bg3">
+                    Columna 2
+                </div> 
+            </div>
+            <div class="col-4">
+                <div class="contenidos bg3">
+                    Columna 2
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6 bg3">
+                Lucas
+            </div>
+            
+
+            <div class="col-4 bg3">
+                Barbero
+            </div>
+
+
+        </div>
+    </div>
+
+    <h3>Columnas Responsive</h3>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="text-white bg4 col-lg-3 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eveniet tenetur quisquam eius eaque quo debitis, illo deserunt quidem? Laudantium aliquam et eligendi culpa mollitia maiores, at facilis repellendus sunt!</p>
+            </div>
+            <div class="text-white bg5 col-lg-3 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eveniet tenetur quisquam eius eaque quo debitis, illo deserunt quidem? Laudantium aliquam et eligendi culpa mollitia maiores, at facilis repellendus sunt!</p>
+            </div>
+            <div class="text-white bg4 col-lg-3 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eveniet tenetur quisquam eius eaque quo debitis, illo deserunt quidem? Laudantium aliquam et eligendi culpa mollitia maiores, at facilis repellendus sunt!</p>
+            </div>
+            <div class="text-white bg5 col-lg-3 col-md-6 col-sm-12">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit eveniet tenetur quisquam eius eaque quo debitis, illo deserunt quidem? Laudantium aliquam et eligendi culpa mollitia maiores, at facilis repellendus sunt!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

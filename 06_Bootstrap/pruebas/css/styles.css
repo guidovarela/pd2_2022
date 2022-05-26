@@ -1,0 +1,21 @@
+body{
+    font-family:"Montserrat";
+}
+
+.bg1{
+    background: rgb(195, 30, 30);
+    color: white;
+}
+.bg2{
+    background: rgb(22, 100, 22);
+}
+.bg3{
+    background: orange;
+}
+.bg4{
+    background: rgb(99, 26, 200);
+}
+.bg5{
+    background: rgb(40, 19, 180);
+}
+
