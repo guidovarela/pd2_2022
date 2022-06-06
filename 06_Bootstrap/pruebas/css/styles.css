@@ -19,3 +19,11 @@ body{
     background: rgb(40, 19, 180);
 }
 
+.Carla-sin-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.anna-height{
+    height: 80px;
+}
