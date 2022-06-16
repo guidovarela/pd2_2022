@@ -55,11 +55,15 @@ html{
         50%{transform: scale(1.5,1.5);}
         100%{transform: scale(1,1);}
     }
+
     @keyframes animLogo_direction{
         0%{transform: scale(1,1);}
         100%{transform: scale(1.5,1.5);}
     }
-    
+
+
+
+
     .logo img{
         width: 100%;
     }
@@ -70,11 +74,10 @@ html{
         animation-iteration-count: infinite;
         animation-direction: alternate;
         animation-timing-function: ease-in-out;
-        animation-play-state: paused;
-
+        animation-play-state: running;
     }
     .logo:hover{
-        animation-play-state: running;
+        animation-play-state: paused;
     }
 
     @keyframes animacion1{
