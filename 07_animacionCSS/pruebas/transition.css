@@ -1,0 +1,104 @@
+html{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.cuadrado{
+    background-color: rgb(32, 42, 232);
+    width: 200px;
+    height: 200px;
+    transition-duration: 2s;
+    transition-property: background-color,transform,border-radius;
+    transition-delay: 0s,2s,4s;
+    transition-timing-function: cubic-bezier(1,-0.01,1,.98);
+    transition: 2s 0s all ease;
+}
+.cuadrado:hover{
+    background-color: aqua;
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+.cuadrado:active{
+    background-color: rgb(255, 221, 0);
+    width: 250px;
+}
+
+/*boton*/
+/*transform: translate() / rotate() / scale() / skew() */
+
+.btn1{
+    background-color: rgb(255, 98, 0);
+    padding: 3%;
+    color: black;
+    border: 0;
+    border-radius:7%;
+    transition-duration: 1s;
+    box-shadow: 0 0 25px 15px rgb(0,0,0,0.3);
+    }
+    .btn1:hover{
+        color: white;
+        transform: translate(0,5px);
+        box-shadow: 0 0 25px 35px rgb(0,0,0,0.3);
+    }
+
+
+    /* animaciones */
+
+    @keyframes animLogo{
+        0%{transform: scale(1,1);}/*scale(x,y)*/
+        50%{transform: scale(1.5,1.5);}
+        100%{transform: scale(1,1);}
+    }
+    @keyframes animLogo_direction{
+        0%{transform: scale(1,1);}
+        100%{transform: scale(1.5,1.5);}
+    }
+    
+    .logo img{
+        width: 100%;
+    }
+    .logo{
+        width: 30%;
+        animation-name: animLogo_direction;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-play-state: paused;
+
+    }
+    .logo:hover{
+        animation-play-state: running;
+    }
+
+    @keyframes animacion1{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+    body,.cuadrado,.btn1{
+        animation-name: animacion1;
+        animation-duration: 4s;
+    }
+    
+    @keyframes animHeader{
+        0%{transform: translateY(-100px);}
+        100%{transform: translateY(0);
+            
+        }
+    }
+    .header{
+        background-color: tomato;
+        color: white;
+        transform: translateY(-100px);
+        animation-name: animHeader ;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }

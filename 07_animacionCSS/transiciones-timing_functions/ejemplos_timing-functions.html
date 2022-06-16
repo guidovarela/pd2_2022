@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head> 
+	<meta charset="UTF-8">	
+	<title>Propiedades CSS3 - Transiciones, Timing Functions</title>
+	<style>
+		 .stable {
+			position: relative;
+			height: 320px;
+		  }
+		  .stable .balloon {
+			position: absolute;
+			bottom: 0;
+			width: 100px;
+			height: 163px;
+			background: url('balloon.png') no-repeat;
+		  }
+		  .stable:hover .balloon {
+			bottom: 157px;
+			transition-duration: 3s;
+		  }
+
+		  .stable .balloon.default {
+			left: 39px;
+			background-image: url('balloon-blue.png');
+		  }
+		  .stable .balloon.linear {
+			left: 149px;
+			transition-timing-function: linear;
+		  }
+		  .stable .balloon.ease-in {
+			left: 259px;
+			transition-timing-function: ease-in;
+		  }
+		  .stable .balloon.ease-out {
+			left: 369px;
+			transition-timing-function: ease-out;
+		  }
+		  .stable .balloon.ease-in-out {
+			left: 479px;
+			transition-timing-function: ease-in-out;
+		  }
+		  .stable .balloon.cubic-bezier {
+			left: 589px;
+			transition-timing-function: cubic-bezier(0,1,1,0);
+		  }
+
+  
+	</style>
+</head>
+<body> 
+	
+	<div class="stable">
+		<div class="balloon default">default</div>
+		<div class="balloon linear">linear</div>
+		<div class="balloon ease-in">ease-in</div>
+		<div class="balloon ease-out">ease-out</div>
+		<div class="balloon ease-in-out">ease-in-out</div>
+		<div class="balloon cubic-bezier">cubic-bezier</div>
+	</div>
+
+</body>
+</html>
